@@ -1,15 +1,31 @@
+import { Container, Navbar, Text } from "@nextui-org/react";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Source Pay</title>
         <meta name="description" content="Source Pay App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Container gap={0} fluid>
+        <Navbar disableShadow variant="sticky">
+          <Navbar.Brand>
+            <Text
+              style={{
+                fontSize: "24px",
+              }}
+              b
+              css={{
+                textGradient: "45deg, $black -20%, $gray600 50%",
+              }}
+            >
+              Source Pay
+            </Text>
+          </Navbar.Brand>
+        </Navbar>
+      </Container>
     </div>
   );
 }

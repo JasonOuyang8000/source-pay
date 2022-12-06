@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { Varela_Round } from "@next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
+import Button from "@nextui-org/react/button";
 
 // If loading a variable font, you don't need to specify the font weight
 const varelaRound = Varela_Round({
