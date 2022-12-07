@@ -9,8 +9,19 @@ export default function Home() {
         <meta name="description" content="Source Pay App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container gap={0} fluid>
-        <Navbar disableShadow variant="sticky">
+      <Container
+        css={{ backgroundColor: "#FAF9F6", height: "100vh" }}
+        gap={0}
+        fluid
+      >
+        <Navbar
+          css={{
+            $$navbarBackgroundColor: "transparent",
+            $$navbarBlurBackgroundColor: "transparent",
+          }}
+          disableShadow
+          variant="sticky"
+        >
           <Navbar.Brand>
             <Text
               style={{
