@@ -24,9 +24,9 @@ export default function Home() {
           css={{
             $$navbarBackgroundColor: "transparent",
             $$navbarBlurBackgroundColor: "transparent",
-            backdropFilter: "unset",
+            backdropFilter: "black",
+            shadow: "none",
           }}
-          disableShadow
           variant="sticky"
         >
           <Navbar.Brand>
@@ -46,11 +46,17 @@ export default function Home() {
         <Spacer y={5} />
 
         <Row justify="center" align="center">
-          <Input size="xl" placeholder="Enter a site" />
+          <Input
+            animated={false}
+            css={{ $$inputColor: "#fff", border: "2px solid black" }}
+            size="xl"
+            placeholder="Enter your College"
+            color="#000"
+          />
           <Lottie
             style={{
               marginLeft: "300px",
-              height: "400px",
+              height: "450px",
             }}
             animationData={CollegeIcon}
           />
