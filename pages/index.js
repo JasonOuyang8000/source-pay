@@ -1,4 +1,4 @@
-import { Container, Navbar, Text } from "@nextui-org/react";
+import { Container, Input, Navbar, Spacer, Text } from "@nextui-org/react";
 import Head from "next/head";
 
 export default function Home() {
@@ -36,6 +36,10 @@ export default function Home() {
             </Text>
           </Navbar.Brand>
         </Navbar>
+        <Spacer y={10} />
+        <Container>
+          <Input placeholder="Enter a Site" />
+        </Container>
       </Container>
     </div>
   );
