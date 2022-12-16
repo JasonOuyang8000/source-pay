@@ -1,5 +1,7 @@
-import { Container, Input, Navbar, Spacer, Text } from "@nextui-org/react";
+import { Container, Input, Navbar, Row, Spacer, Text } from "@nextui-org/react";
 import Head from "next/head";
+import Lottie from "lottie-react";
+import GreenMoneyBg from "../assets/78265-running-after-money-loop.json";
 
 export default function Home() {
   return (
@@ -10,14 +12,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container
-        css={{ backgroundColor: "#FAF9F6", height: "100vh" }}
-        gap={0}
+        css={{
+          backgroundColor: "#FFFFF0",
+          height: "100vh",
+          maxW: "unset",
+          padding: 0,
+        }}
         fluid
       >
         <Navbar
           css={{
             $$navbarBackgroundColor: "transparent",
             $$navbarBlurBackgroundColor: "transparent",
+            backdropFilter: "unset",
           }}
           disableShadow
           variant="sticky"
@@ -36,10 +43,18 @@ export default function Home() {
             </Text>
           </Navbar.Brand>
         </Navbar>
-        <Spacer y={10} />
-        <Container>
-          <Input placeholder="Enter a Site" />
-        </Container>
+        <Spacer y={5} />
+
+        <Row justify="center" align="center">
+          <Input size="xl" placeholder="Enter a site" />
+          <Lottie
+            style={{
+              marginLeft: "300px",
+              height: "400px",
+            }}
+            animationData={GreenMoneyBg}
+          />
+        </Row>
       </Container>
     </div>
   );
