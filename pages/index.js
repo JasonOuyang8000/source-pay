@@ -1,14 +1,14 @@
 import { Container, Input, Navbar, Row, Spacer, Text } from "@nextui-org/react";
 import Head from "next/head";
 import Lottie from "lottie-react";
-import GreenMoneyBg from "../assets/78265-running-after-money-loop.json";
+import CollegeIcon from "../assets/98991-exams-preparation.json";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Source Pay</title>
-        <meta name="description" content="Source Pay App" />
+        <title>Course Search</title>
+        <meta name="description" content="Course Search App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container
@@ -39,7 +39,7 @@ export default function Home() {
                 textGradient: "45deg, $black -20%, $gray600 50%",
               }}
             >
-              Source Pay
+              Course Search
             </Text>
           </Navbar.Brand>
         </Navbar>
@@ -52,7 +52,7 @@ export default function Home() {
               marginLeft: "300px",
               height: "400px",
             }}
-            animationData={GreenMoneyBg}
+            animationData={CollegeIcon}
           />
         </Row>
       </Container>
