@@ -50,7 +50,7 @@ export default function Home() {
             animated={false}
             css={{ $$inputColor: "#fff", border: "2px solid black" }}
             size="xl"
-            placeholder="Enter your College"
+            placeholder="Find Your Class"
             color="#000"
           />
           <Lottie
